@@ -40,8 +40,7 @@ public:
     void get_data()
     {
         cout << "Enter the name : ";
-        cin.get();
-        cin.getline(name, 20);
+        cin>>name;
         cout << "Enter the id : ";
         cin >> id;
     }
@@ -61,9 +60,6 @@ public:
     }
     virtual void display() = 0;             //Pure Virtual Function
 };
-void s_reg(){
-    
-}
 
 class Regular : public Employee             //Public Inheritance 
 {
@@ -141,8 +137,8 @@ int main()
     float f[100];
     float cho;
     do{
-    cout<<"Press 1 if u are a Regualar emplyoee \n";
-    cout<<"Press 2 if u are a Part Time emplyoee \n";
+    cout<<"Press 1 if u are a Regualar employee \n";
+    cout<<"Press 2 if u are a Part Time employee \n";
     cout<<"Press 3 to Money to be paid to the employee \n";
     cout<<"Press 4 to enter the details of the customer\n ";
     cout<<"Press 4.5 to enter the review of the customer\n";
